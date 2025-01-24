@@ -40,7 +40,7 @@ def main():
 
     if st.button("Predict"):
         response=prediction(inp_list)
-        st.sucess(response)
+        st.success(response)
 
 if __name__=="__main__":
     main()
