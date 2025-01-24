@@ -12,7 +12,7 @@ with open("scaler.pkl","rb") as file:
 with open("pca.pkl","rb") as file:
     pca=pickle.load(file)
 
-def precition(input_data):
+def prediction(input_data):
     scaled_data=scaler.transform(input_data)
     pca_data=pca.transform(scaled_data)
     pred=model.predict(pca_data)[0]
